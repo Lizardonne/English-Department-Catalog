@@ -1,10 +1,9 @@
-# English-Department-Catalog
+# English Department Catalog
 A cross-product for CS260, ENGL 394R, and the TA HumGrant. A website that aggregates and provides a searchable interface for classes, professors, and activities in the English department at BYU.
 
-
-# FOR CS260'S CREATIVE PROJECT 1:
 *****
 
+# For CS260's Creative Project 1:
 For this lab, you will create a basic website using HTML and CSS. This website can be for anything you want, but should not be too similar to the website you built for Lab 1. You must create your own original work.
 
 This is your chance to be creative and build anything you want -- a book store, a social media site, or anything else. You are welcome to provide "fake" data for the website. For example, you can't build a complete clone of Instagram, since you won't have a database, interactive front end, etc. But you could mock up what a clone of Instagram would look like, including pages to show a stream of photos, upload a photo, login to your account, etc.
