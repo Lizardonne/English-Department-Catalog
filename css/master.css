@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Garamond', sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  padding: 1em;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  background-color: antiquewhite;
+}
+.navbar, .footer, .main {
+  width: 75%;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Navigation Bar, Footer */
+.navbar, .footer {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.25em;
+}
+.navbar {
+  justify-content: flex-start;
+}
+.footer {
+  margin-top: 5%;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+.active {
+  background-color: tan;
+}
+/* -- sticky footer */
+html, body {
+  height: 100%;
+}
+.main {
+  flex: 1 0 auto;
+}
+
+/* Home Page */
+.home img {
+  width: 100vw;
+  height: 40vh;
+  object-fit: cover;
+  object-position: bottom;
+}
+/* -- information columns */
+.column-group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.column {
+  width: 33%;
+  height: 100%;
+  padding: 0.5em 2em;
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.column h1 {
+  font-size: 1.75em;
+}
+.column p {
+  font-size: 1.25em;
+}
+/* -- centered search bar */
+.searchbar {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.searchbar input {
+  font-size: 2em;
+  width: 50vw;
+}
+.searchbar button {
+  width: 2em;
+  height: 2em;
+}
+
+/* Credits Page */
+.credits img {
+  width: 100%;
+}
