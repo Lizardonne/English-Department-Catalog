@@ -3,67 +3,97 @@
   <head>
     <meta charset="utf-8">
     <title>Department - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/master.css">
   </head>
   <body>
-    <!-- FIXME: bootstrap -->
-    <div class="navbar">
-      <a class="active" href="/">Home</a>
-      <a href="/pages/programs.html">Programs</a>
-      <a href="/pages/professors.html">Professors</a>
-      <a href="/pages/classes.html">Courses</a>
-      <a href="/pages/extracurriculars.html">Extracurriculars</a>
-    </div>
-
-    <div class="main home">
-      <img src="/images/bookshelf.jpg">
-
-      <div class="searchbar">
-        <form action="/index.html">
-          <input type="text" placeholder="Search the department for...">
-        </form>
-      </div>
-
-      <div class="column-group">
-        <a class="column" href="#">
-          <h1>Header</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas
-            ultricies mi eget mauris pharetra et. Semper viverra nam libero
-            justo laoreet sit amet cursus sit. Quis varius quam quisque id diam
-            vel. Morbi tristique senectus et netus et malesuada fames ac turpis.
-            Diam ut venenatis tellus in metus vulputate eu. Adipiscing elit duis
-            tristique sollicitudin nibh sit.</p>
-        </a>
-        <a class="column" href="#">
-          <h1>Header</h1>
-          <p>Elementum integer enim neque volutpat. Blandit turpis cursus in hac
-            habitasse platea dictumst quisque. Ultrices eros in cursus turpis
-            massa tincidunt dui ut. Facilisis mauris sit amet massa vitae
-            tortor. Augue mauris augue neque gravida in. Bibendum est ultricies
-            integer quis auctor elit sed vulputate. Faucibus in ornare quam
-            viverra orci sagittis eu volutpat. Nulla aliquet enim tortor at
-            auctor urna.</p>
-        </a>
-        <a class="column" href="#">
-          <h1>Header</h1>
-          <p>Pretium viverra suspendisse potenti nullam ac tortor. Odio ut enim
-            blandit volutpat maecenas volutpat. Mi in nulla posuere
-            sollicitudin. Euismod nisi porta lorem mollis aliquam ut porttitor.
-            Quis auctor elit sed vulputate mi sit amet. Semper quis lectus nulla
-            at volutpat. Pharetra pharetra massa massa ultricies mi. Quisque
-            egestas diam in arcu cursus euismod. Rutrum tellus pellentesque eu
-            tincidunt tortor.</p>
-        </a>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <a class="navbar-brand" href="/">Department Search</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a href="/">Home</a></li>
+            <li class="nav-item"><a href="/pages/programs.html">Programs</a></li>
+            <li class="nav-item"><a href="/pages/professors.html">Professors</a></li>
+            <li class="nav-item"><a href="/pages/courses.html">Courses</a></li>
+            <li class="nav-item"><a href="/pages/extracurriculars.html">Extracurriculars</a></li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0" action="index.html" method="post">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
         </div>
-    </div>
-    <br>
+      </nav>
+    </header>
 
-    <div class="footer">
-      <a href="https://english.byu.edu/">Department</a>
-      <a href="/pages/about.html">About</a>
-      <a href="/pages/credits.html">Credits</a>
-      <a href="https://github.com/Lizardonne/English-Department-Catalog">GitHub</a>
-    </div>
+    <!-- Begin page content -->
+    <main class="flex-shrink-0" role="main">
+      <div class="main home">
+        <img src="/images/bookshelf.jpg">
+
+        <div class="searchbar">
+          <form action="/index.html">
+            <input type="text" placeholder="Search the department for...">
+          </form>
+        </div>
+        <div class="column-group">
+          <a class="column" href="#">
+            <h1>Header</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas
+              ultricies mi eget mauris pharetra et. Semper viverra nam libero
+              justo laoreet sit amet cursus sit. Quis varius quam quisque id diam
+              vel. Morbi tristique senectus et netus et malesuada fames ac turpis.
+              Diam ut venenatis tellus in metus vulputate eu. Adipiscing elit duis
+              tristique sollicitudin nibh sit.</p>
+          </a>
+          <a class="column" href="#">
+            <h1>Header</h1>
+            <p>Elementum integer enim neque volutpat. Blandit turpis cursus in hac
+              habitasse platea dictumst quisque. Ultrices eros in cursus turpis
+              massa tincidunt dui ut. Facilisis mauris sit amet massa vitae
+              tortor. Augue mauris augue neque gravida in. Bibendum est ultricies
+              integer quis auctor elit sed vulputate. Faucibus in ornare quam
+              viverra orci sagittis eu volutpat. Nulla aliquet enim tortor at
+              auctor urna.</p>
+          </a>
+          <a class="column" href="#">
+            <h1>Header</h1>
+            <p>Pretium viverra suspendisse potenti nullam ac tortor. Odio ut enim
+              blandit volutpat maecenas volutpat. Mi in nulla posuere
+              sollicitudin. Euismod nisi porta lorem mollis aliquam ut porttitor.
+              Quis auctor elit sed vulputate mi sit amet. Semper quis lectus nulla
+              at volutpat. Pharetra pharetra massa massa ultricies mi. Quisque
+              egestas diam in arcu cursus euismod. Rutrum tellus pellentesque eu
+              tincidunt tortor.</p>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">
+          <ul>
+            <li><a href="https://english.byu.edu/">Department</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/credits.html">Credits</a></li>
+            <li><a href="https://github.com/Lizardonne/English-Department-Catalog">GitHub</a></li>
+          </ul>
+        </span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>

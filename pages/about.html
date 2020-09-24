@@ -2,42 +2,80 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Courses - Department</title>
+    <title>About - Department</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/master.css">
   </head>
   <body>
-    <div class="navbar">
-      <a href="/">Home</a>
-      <a href="/pages/programs.html">Programs</a>
-      <a href="/pages/professors.html">Professors</a>
-      <a href="/pages/courses.html">Courses</a>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <a class="navbar-brand" href="/">Department Search</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a href="/">Home</a></li>
+            <li class="nav-item"><a href="/pages/programs.html">Programs</a></li>
+            <li class="nav-item"><a href="/pages/professors.html">Professors</a></li>
+            <li class="nav-item"><a href="/pages/courses.html">Courses</a></li>
+            <li class="nav-item"><a href="/pages/extracurriculars.html">Extracurriculars</a></li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0" action="index.html" method="post">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
 
-    <h1>English Department Catalog</h1>
-    <p>Coded, compiled, and organized by Alex Slansky</p>
-    <br>
+    <!-- Begin page content -->
+    <main class="flex-shrink-0" role="main">
+      <div class="main about">
+        <h1>English Department Catalog</h1>
+        <p>Coded, compiled, and organized by Alex Slansky</p>
+        <br>
 
-    <p>This project overlaps three connected interests:</p>
-    <ul>
-      <li>CS260's creative projects,</li>
-      <li>The TA HumGrant, and</li>
-      <li>ENGL394R's dependence on that project.</li>
-    </ul>
-    <br>
+        <p>This project overlaps three connected interests:</p>
+        <ul>
+          <li>CS260's creative projects,</li>
+          <li>The TA HumGrant, and</li>
+          <li>ENGL394R's dependence on that project.</li>
+        </ul>
+        <br>
 
-    <p>This site is where the project will be hosted--at least for the Fall 2020 semester.</p>
-    <p>Loosely, the steps of the project are:</p>
-    <ol>
-      <li>Create a mock-up of the database; define the information that will be stored, and the tables in which it will be stored.</li>
-      <li>Gather information; import catalog and directory information to the database structure, then email professors for missing information and confirmation. (Would a Google Survey be helpful here?)</li>
-      <li>Write the database; cf. CS240's FamilyMap database assignment.</li>
-      <li>Compile gathered information into the database.</li>
-      <li>Integrate the database with the website; may need to wait for instruction on MongoDB in CS260.</li>
-    </ol>
-    <div class="footer">
-      <a href="https://english.byu.edu/">Department</a>
-      <a class="active" href="/pages/about.html">About</a>
-      <a href="/pages/credits.html">Credits</a>
-      <a href="https://github.com/Lizardonne/English-Department-Catalog">GitHub</a>
-    </div>
+        <p>This site is where the project will be hosted--at least for the Fall 2020 semester.</p>
+        <p>Loosely, the steps of the project are:</p>
+        <ol>
+          <li>Create a mock-up of the database; define the information that will be stored, and the tables in which it will be stored.</li>
+          <li>Gather information; import catalog and directory information to the database structure, then email professors for missing information and confirmation. (Would a Google Survey be helpful here?)</li>
+          <li>Write the database; cf. CS240's FamilyMap database assignment.</li>
+          <li>Compile gathered information into the database.</li>
+          <li>Integrate the database with the website; may need to wait for instruction on MongoDB in CS260.</li>
+        </ol>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">
+          <ul>
+            <li><a href="https://english.byu.edu/">Department</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/credits.html">Credits</a></li>
+            <li><a href="https://github.com/Lizardonne/English-Department-Catalog">GitHub</a></li>
+          </ul>
+        </span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
