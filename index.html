@@ -2,53 +2,64 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Department - Home</title>
+    <title>Department Search</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="/css/home.css">
   </head>
 
   <body>
     <!-- Header -->
     <header>
-      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+      <nav class="navbar navbar-expand-md sticky-top">
         <a class="navbar-brand" href="/">Department Search</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div id="navbarCollapse" class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item nav-link active"><a href="/">Home</a></li>
-            <li class="nav-item nav-link"><a href="/pages/programs.html">Programs</a></li>
-            <li class="nav-item nav-link"><a href="/pages/professors.html">Professors</a></li>
-            <li class="nav-item nav-link"><a href="/pages/courses.html">Courses</a></li>
-            <li class="nav-item nav-link"><a href="/pages/extracurriculars.html">Extracurriculars</a></li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/programs.html">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/professors.html">Professors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/extracurriculars.html">Extracurriculars</a>
+            </li>
           </ul>
-          <form class="form-inline mt-2 mt-md-0" action="/index.html" method="post">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <form class="form-inline">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
       </nav>
     </header>
 
     <!-- Begin page content -->
-    <main class="flex-shrink-0" role="main">
+    <main role="main">
       <div class="main home">
         <div class="banner">
           <img src="/images/bookshelf.jpg">
 
           <div class="searchbar">
-            <form class="form-inline mt-2 mt-md-0" action="/index.html" method="post">
-              <input type="text" placeholder="Search the department for...">
+            <form class="" action="/index.html" method="post">
+              <input class="form-control form-control-lg" type="text" placeholder="Search the department for...">
             </form>
           </div>
         </div>
         <div class="container">
           <div class="row">
-            <a class="col" href="#">
-              <h1>Header</h1>
+            <a class="col col-md-4 col-12" href="#">
+              <h2>Header</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas
                 ultricies mi eget mauris pharetra et. Semper viverra nam libero
@@ -57,8 +68,8 @@
                 Diam ut venenatis tellus in metus vulputate eu. Adipiscing elit duis
                 tristique sollicitudin nibh sit.</p>
             </a>
-            <a class="col" href="#">
-              <h1>Header</h1>
+            <a class="col col-md-4 col-12" href="#">
+              <h2>Header</h2>
               <p>Elementum integer enim neque volutpat. Blandit turpis cursus in hac
                 habitasse platea dictumst quisque. Ultrices eros in cursus turpis
                 massa tincidunt dui ut. Facilisis mauris sit amet massa vitae
@@ -67,8 +78,8 @@
                 viverra orci sagittis eu volutpat. Nulla aliquet enim tortor at
                 auctor urna.</p>
             </a>
-            <a class="col" href="#">
-              <h1>Header</h1>
+            <a class="col col-md-4 col-12" href="#">
+              <h2>Header</h2>
               <p>Pretium viverra suspendisse potenti nullam ac tortor. Odio ut enim
                 blandit volutpat maecenas volutpat. Mi in nulla posuere
                 sollicitudin. Euismod nisi porta lorem mollis aliquam ut porttitor.
@@ -83,17 +94,21 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3">
-      <div class="container">
-        <span class="text-muted">
-          <ul>
-            <li><a href="https://english.byu.edu/">Department</a></li>
-            <li><a href="/pages/about.html">About</a></li>
-            <li><a href="/pages/credits.html">Credits</a></li>
-            <li><a href="https://github.com/Lizardonne/English-Department-Catalog">GitHub</a></li>
-          </ul>
-        </span>
-      </div>
+    <footer class="footer">
+      <ul>
+        <li class="nav-item">
+          <a class="nav-link" href="https://english.byu.edu">Department</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/credits.html">Credits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/Lizardonne/English-Department-Catalog">GitHub</a>
+        </li>
+      </ul>
     </footer>
 
     <!-- Bootstrap scripts -->
