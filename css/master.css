@@ -12,10 +12,14 @@ a:hover {
   text-decoration: none;
   background-color: antiquewhite;
 }
+.main:not(.home) {
+  margin: 2% 5% 5% 5%;
+}
 
 /* Header */
 header .navbar {
   padding: 0;
+  border-bottom: 1px solid black;
 }
 header .navbar-brand {
   padding-left: 1em;
@@ -27,10 +31,11 @@ header .active {
 }
 header .btn {
   color: black;
-  border: none;
+  border-color: tan;
 }
 header .btn:hover {
   background-color: tan;
+  border-color: tan;
   color: black;
 }
 
