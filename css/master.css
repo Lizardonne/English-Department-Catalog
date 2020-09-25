@@ -29,7 +29,19 @@ header .navbar-brand {
 header .active {
   background-color: tan;
 }
+header li {
+  padding-left: 1em;
+}
+header .form-inline {
+  display: flex;
+  justify-content: center;
+  margin: 0.5em;
+}
+header .form-control {
+  width: 75% !important;
+}
 header .btn {
+  width: 25%;
   color: black;
   border-color: tan;
 }
@@ -37,6 +49,15 @@ header .btn:hover {
   background-color: tan;
   border-color: tan;
   color: black;
+}
+@media only screen and (min-width: 961px) {
+  header li {
+    padding: 0;
+  }
+  header .form-inline {
+    width: 275px;
+    margin: 0;
+  }
 }
 
 /* Footer */
