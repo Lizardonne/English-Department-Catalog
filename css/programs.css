@@ -8,11 +8,8 @@
   padding: 1em;
 }
 
-@media only screen and (min-width 961px) {
-  .majors {
+@media only screen and (min-width: 961px) {
+  .majors, .minors {
     column-count: 2;
-  }
-  .minors {
-    column-count: 3
   }
 }
