@@ -1,0 +1,18 @@
+.majors, .minors {
+  column-count: 1;
+  column-gap: 1em;
+}
+.item {
+  display: inline-block;
+  margin: 0.5em;
+  padding: 1em;
+}
+
+@media only screen and (min-width 961px) {
+  .majors {
+    column-count: 2;
+  }
+  .minors {
+    column-count: 3
+  }
+}

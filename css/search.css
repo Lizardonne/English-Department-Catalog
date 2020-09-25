@@ -7,37 +7,54 @@
 .filters {
   margin: 0.5em 0 1em 0;
 }
-.searchbar {
+.filters .searchbar {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.searchbar .form-inline {
+.filters .searchbar .form-inline {
   width: 275px;
 }
-.searchbar input {
+.filters .searchbar input {
   width: 75% !important;
 }
-.searchbar button, .searchbar button:hover {
+.filters .searchbar button, .filters .searchbar button:hover {
   width: 25%;
   color: black;
   border-color: tan;
 }
-.searchbar button:hover {
+.filters .searchbar button:hover {
   background-color: tan;
 }
-.col {
+.filters .col {
   padding: 0.5em;
 }
-.form-group {
+.filters .form-group {
   margin: 0;
 }
 
 .results {
-  width: 80%;
+  column-count: 1;
+  column-gap: 1em;
+}
+.results-item {
+  display: inline-block;
+  margin: 0.5em;
+  padding: 1em;
 }
 .results ul {
   list-style: none;
   padding-left: 1em;
   text-indent: -1em;
+}
+@media only screen and (min-width: 961px) {
+  .professors .results {
+    column-count: 4;
+  }
+  .extracurriculars .results {
+    column-count: 2;
+  }
+  .courses .results {
+    column-count: 3;
+  }
 }
